@@ -59,8 +59,8 @@ function Flame() {
 
     return (
         <div>
-            <input type="text" value={firstName} placeholder="Enter first name" id="input1" data-testid="input1" onChange={(e) => setFirstName(e.target.value)}></input>
-            <input type="text" value={secondName} placeholder="Enter second name" id="input2" data-testid="input2" onChange={(e) => setSecondName(e.target.value)}></input>
+            <input type="text" value={firstName} placeholder="first name" id="input1" data-testid="input1" onChange={(e) => setFirstName(e.target.value)}></input>
+            <input type="text" value={secondName} placeholder="second name" id="input2" data-testid="input2" onChange={(e) => setSecondName(e.target.value)}></input>
             <button id="calculate_relationship" data-testid="calculate_relationship" onClick={handleCalculateRelationship}>Calculate Relationship Future</button>
             <button id="clear" data-testid="clear" onClick={handleClear}>Clear</button>
             <h3 data-testid="answer">{relationshipStatus}</h3>
